@@ -9,7 +9,8 @@ body {
 }
 
 .header {
-  background: url("images/bg.jpg") center no-repeat;
-  background-size: cover;
+  background: url("images/bg1.jpg") no-repeat;
+  background-size: contain;
+  background-color: #1D0F0A;
   height: 100vh;
 }
