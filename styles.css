@@ -11,6 +11,51 @@ body {
 .header {
   background: url("images/bg1.jpg") no-repeat;
   background-size: contain;
-  background-color: #1D0F0A;
+  background-color: #1d0f0a;
   height: 100vh;
+}
+
+.header__content {
+  display: none;
+}
+
+@media only screen and (max-width: 32em) {
+  .header {
+    background: url("images/fondo-movil.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+  }
+
+  .header__content {
+    max-width: 17rem;
+    display: block;
+    color: white;
+    text-align: center;
+    line-height: 1.45;
+    padding-top: 4rem;
+  }
+
+  .header__content > img {
+    width: 10rem;
+  }
+  .header__content > h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0.8rem 0;
+  }
+  .header__content > p {
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+  }
+  .header__content > span {
+    display: block;
+    margin: 0 auto;
+    width: 10rem;
+    font-size: 14px;
+  }
+  .header__content > span > h5 {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
 }
