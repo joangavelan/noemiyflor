@@ -1,3 +1,39 @@
+@font-face {
+  font-family: 'Neue Haas';
+  src: url('./fonts/NeueHaasDisplay-Thin.ttf') format('truetype');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'Neue Haas';
+  src: url('./fonts/NeueHaasDisplay-Light.ttf') format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Neue Haas';
+  src: url('./fonts/NeueHaasDisplay-Roman.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Neue Haas';
+  src: url('./fonts/NeueHaasDisplay-Mediu.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Neue Haas';
+  src: url('./fonts/NeueHaasDisplay-Bold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Neue Haas';
+  src: url('./fonts/NeueHaasDisplay-Black.ttf') format('truetype');
+  font-weight: 700;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,17 +42,50 @@
 
 body {
   min-height: 100vh;
+  font-family: 'Neue Haas';
 }
 
 .header {
-  background: url("images/bg1.jpg") no-repeat;
-  background-size: contain;
+  background: url("images/bg.jpg") no-repeat;
+  background-size: cover;
   background-color: #1d0f0a;
   height: 100vh;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding: 2rem;
 }
 
 .header__content {
-  display: none;
+  max-width: 10rem;
+  color: #EFEFEF;
+  line-height: 1.45;
+  text-align: right;
+  padding-bottom: 5%;
+}
+.header__content > img {
+  width: 8rem;
+}
+.header__content > h1 {
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin: 0.8rem 0;
+}
+.header__content > p {
+  font-size: 13px;
+  margin-bottom: 1.2rem;
+}
+.header__content > span {
+  display: block;
+  width: 6rem;
+  margin-left: auto;
+  font-size: 10px;
+  line-height: 1.55;
+  margin-top: 5rem;
+}
+.header__content > span > h5 {
+  font-size: 13px;
+  font-weight: 500;
 }
 
 @media only screen and (max-width: 32em) {
@@ -25,14 +94,14 @@ body {
     background-size: cover;
     display: flex;
     justify-content: center;
+    align-items: normal;
+    padding: 0;
   }
 
   .header__content {
     max-width: 17rem;
     display: block;
-    color: white;
     text-align: center;
-    line-height: 1.45;
     padding-top: 4rem;
   }
 
@@ -41,7 +110,7 @@ body {
   }
   .header__content > h1 {
     font-size: 2rem;
-    font-weight: bold;
+    font-weight: 500;
     margin: 0.8rem 0;
   }
   .header__content > p {
@@ -49,13 +118,13 @@ body {
     margin-bottom: 1.2rem;
   }
   .header__content > span {
-    display: block;
     margin: 0 auto;
-    width: 10rem;
     font-size: 14px;
+    width: 10rem;
+    margin-top: 2rem;
   }
   .header__content > span > h5 {
     font-size: 1.1rem;
-    font-weight: bold;
+    font-weight: 500;
   }
 }
